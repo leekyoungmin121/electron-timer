@@ -1,0 +1,105 @@
+@import url(https://fonts.googleapis.com/css?family=Orbitron:700);
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    position: relative;
+}
+
+.background {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #333;
+}
+.background.expand {
+    animation-duration: 0.5s;
+    animation-name: Expand;
+}
+
+.timer-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fefefe;
+    /* color: #D7ECFF; */
+    /* text-shadow: 0 0 2px #fff, 0 0 6px #fff, 0 0 10px #fff, 0 0 15px #228DFF, 0 0 25px #228DFF, 0 0 30px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF; */
+    display: flex;
+    align-items: baseline;
+}
+
+.ampm-wrap {
+    flex: 1;
+    display: inline-flex;
+    align-items: baseline;
+    justify-content: left;
+    padding-right: 6vw;
+}
+.ampm {
+    font-size: 3vw;
+}
+
+.time-wrap {
+    display: flex;
+    flex: 9;
+    align-items: center;
+}
+
+.time {
+    font-size: 20vw;
+}
+
+.dividing-line {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 5px;
+    background-color: #333;
+    z-index: 3;
+}
+
+.colon {
+    padding-bottom: 4vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    animation-name: Fade;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Fade {
+    from {
+        opacity: 1;
+    }
+
+    50%{
+        opacity: 0;
+    }
+    
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes Expand {
+    from {
+        width: 0;
+        /* height: 0; */
+    }
+
+    to {
+        width: 100vw;
+        /* height: 100vh; */
+    }
+}

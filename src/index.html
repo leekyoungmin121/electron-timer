@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <title>Custom Timer</title>
+    <script type="text/javascript" defer src="./timer.js"></script>
+</head>
+
+<body id="$body">
+    <div id="div_background" class="background"></div>
+    <!-- <div id="divide_div" class="dividing-line"></div> -->
+    <div class="timer-container">
+        <!-- <div class="ampm-wrap">
+            <p id="ampm" class="ampm">AM</p>
+        </div> -->
+        <div class="time-wrap">
+            <p id="p_hour" class="time"></p>
+            <p id="p_colon" class="colon time"></p>
+            <p id="p_minute" class="time"></p>
+            <p id="p_second" class="time"></p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -9,7 +9,7 @@ ipcRenderer.on(background_init.channel, (event) => {
 });
 
 function generateRandomColor(){
-    let maxVal = 0xFFFFFF; // 16777215
+    let maxVal = 0xFFFFFF;
     let randomNumber = Math.random() * maxVal; 
     randomNumber = Math.floor(randomNumber);
     randomNumber = randomNumber.toString(16);

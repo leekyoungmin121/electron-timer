@@ -1,4 +1,4 @@
-const { ipcRenderer } = require('electron');
+let { ipcRenderer } = require('electron');
 const { eventProvider } = require('../constants');
 
 const { background_init } = eventProvider;

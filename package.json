@@ -19,11 +19,12 @@
   },
   "homepage": "https://github.com/leekyoungmin121/electron-timer#readme",
   "dependencies": {
+    "@electron/remote": "^2.0.7",
     "moment": "^2.29.1",
     "moment-timezone": "^0.5.34"
   },
   "devDependencies": {
-    "electron": "^17.0.1"
+    "electron": "17.1.1"
   },
   "build": {
     "electronVersion": "4.2.8",

@@ -1,10 +1,10 @@
 let { ipcRenderer } = require('electron');
-const { eventProvider } = require('../constants');
+const { eventProvider } = require('../../constants');
 
 const { background_init } = eventProvider;
-ipcRenderer.on(background_init.channel, (event) => {
+ipcRenderer.on(background_init, (event) => {
     $body.style.backgroundColor = window.getComputedStyle(div_background).backgroundColor;
-    div_background.style.backgroundColor = generateRandomColor();
+    // div_background.style.backgroundColor = generateRandomColor();
     div_background.classList.add('expand')
 });
 

@@ -1,12 +1,7 @@
-
 exports.eventProvider = {
-  timer_init: {
-    channel: 'timer-init',
-  },
-  background_init: {
-    channel: 'background-init',
-  },
-  menu_init: {
-    channel: 'menu-init'
-  }
+  timer_init: 'timer-init',
+  background_init: 'background-init',
+  menu_init: 'menu-init',
+  menu_select: 'menu-select',
+  alarm_init: 'alarm-init'
 };
